@@ -1,0 +1,7 @@
+D:\github\CSHARP_Basic\CSHARP_Basic\bin\Debug\CSHARP_Basic.exe.config
+D:\github\CSHARP_Basic\CSHARP_Basic\bin\Debug\CSHARP_Basic.exe
+D:\github\CSHARP_Basic\CSHARP_Basic\bin\Debug\CSHARP_Basic.pdb
+D:\github\CSHARP_Basic\CSHARP_Basic\obj\Debug\CSHARP_Basic.csprojAssemblyReference.cache
+D:\github\CSHARP_Basic\CSHARP_Basic\obj\Debug\CSHARP_Basic.csproj.CoreCompileInputs.cache
+D:\github\CSHARP_Basic\CSHARP_Basic\obj\Debug\CSHARP_Basic.exe
+D:\github\CSHARP_Basic\CSHARP_Basic\obj\Debug\CSHARP_Basic.pdb

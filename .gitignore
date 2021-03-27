@@ -1,0 +1,12 @@
+# .sln
+*.sln
+
+# .config
+*.config
+
+# /bin
+/bin
+/obj
+
+# .vs
+*.vs

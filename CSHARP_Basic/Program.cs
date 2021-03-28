@@ -10,29 +10,60 @@ namespace CSHARP_Basic
     {
         static void Main(string[] args)
         {
-            // Variable
-            Variable v = new Variable();
-            v.print_variable();
+            //// Variable
+            //Variable v = new Variable();
+            //v.print_variable();
 
-            // Strings
-            Strings s = new Strings();
-            s.print_string();
+            //// Strings
+            //Strings s = new Strings();
+            //s.print_string();
 
-            // Numbers
-            Numbers n = new Numbers();
-            n.print_numbers();
+            //// Numbers
+            //Numbers n = new Numbers();
+            //n.print_numbers();
 
-            // Inputs
-            Inputs i = new Inputs();
-            i.print_inputs();
+            //// Inputs
+            //Inputs i = new Inputs();
+            //i.print_inputs();
 
-            // Typecast
-            Calculator c = new Calculator();
-            c.print_calculator();
+            //// Typecast
+            //Calculator c = new Calculator();
+            //c.print_calculator();
 
-            // Arrays
-            Arrays a = new Arrays();
-            a.print_arrays();
+            //// Arrays
+            //Arrays a = new Arrays();
+            //a.print_arrays();
+
+            //// Exceptions
+            //Exceptions e = new Exceptions();
+            //e.print_execption();
+
+            //// Constructor
+            //Book book1 = new Book("Harry Potter", "JK Rolling", 456);
+
+            //// Public method
+            //Student student1 = new Student("John", "Mathatics", 4.32);
+            //Console.WriteLine(student1.HasHonors());
+
+            //// Getter & Setter
+            //Movie avengers = new Movie("Shrek", "Adam Adamson", "Cat");
+            //Console.WriteLine(avengers.Rating);
+
+            //// Static Class Attributes
+            //Song holiday = new Song("Holiday", "Green Day", 201);
+            //Song kashmir = new Song("Kashmir", "Led Zeppelin", 300);
+            //Console.WriteLine("Song count: " + Song.songCount);
+
+            // Static Methods & Classes
+            Console.WriteLine(Math.Sqrt(144));
+            UsefulTools.SayHi("WCH");
+
+            // Inheritance
+            Chef chef = new Chef();
+            ItalianChef italichef = new ItalianChef();
+
+            chef.MakeSpecialDish();
+            italichef.MakeSpecialDish();
         }
     }
 
@@ -137,7 +168,37 @@ namespace CSHARP_Basic
                 {3, 4 },
                 {5, 6 }
             };
-            Console.WriteLine("numberGrid[1, 2]" + numberGrid[1, 2]);
+            Console.WriteLine("numberGrid[1, 1]: " + numberGrid[1, 1]);
+        }
+    }
+
+    class Exceptions
+    {
+        public void print_execption()
+        {
+            Console.WriteLine("============== Practice to handle exceptions ============");
+
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(num1 / num2);
+            }
+            catch(DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch(FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Finally Statement");
+            }
         }
     }
 }
